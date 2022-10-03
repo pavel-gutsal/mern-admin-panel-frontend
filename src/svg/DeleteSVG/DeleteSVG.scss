@@ -1,0 +1,26 @@
+.DeleteSVG {
+  display: flex;
+  flex-grow: 1;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  left: -4px;
+  
+  svg {
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover,
+  &:focus {
+    cursor: pointer;
+  }
+}
+
+.DeleteSVG:hover,
+.DeleteSVG:focus {
+  svg {
+    fill: rgb(0, 0, 0);
+    transform: translateY(-2px) scale(1.05);
+  }
+}

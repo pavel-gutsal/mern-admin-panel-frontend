@@ -1,0 +1,35 @@
+.EditErrorModalWindow {
+  position: absolute;
+  bottom: -90%;
+  left: 50%;
+  width: 200px;
+  transform: translateX(-50%);
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.2);
+  z-index: 2;
+
+  &__wrapper {
+    height: fit-content;
+    padding: 10px;
+    border-left: 4px solid rgb(233, 71, 71);
+    background: white;
+    border-radius: 4px;
+    position: relative;
+  }
+
+  &__squire {
+    width: 10px;
+    height: 10px;
+    background: rgb(255, 255, 255);
+    left: 50%;
+    top: 0;
+    transform-origin: center;
+    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    position: absolute;
+  }
+
+  &__errorDescription {
+    color: rgb(55, 55, 55);
+    font-size: 14px;
+    font-weight: 400;
+  }
+}

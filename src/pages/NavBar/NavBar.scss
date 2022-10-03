@@ -1,0 +1,28 @@
+.NavBar {
+  background: none;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 60px;
+
+  &__logOut {
+    width: 70px;
+    height: 30px;
+    background: rgb(232, 232, 232);
+    border: 1px solid rgb(172, 172, 172);
+    color: rgb(74, 74, 74);
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    transition: all 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+      background: rgb(255, 255, 255);
+      border: 1px solid rgb(115, 115, 115);
+      color: rgb(45, 45, 45);
+    }
+  }
+}

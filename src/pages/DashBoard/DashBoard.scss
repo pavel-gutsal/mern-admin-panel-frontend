@@ -1,0 +1,130 @@
+//locale variables 
+
+.DashBoard {
+  height: calc(100vh - 60px - 60px);
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+
+  &__container {
+    width: 900px;
+    height: calc(100vh - 60px - 60px - 40px);
+    border-radius: 20px;
+    background: white;
+    box-shadow: 0 0 0 10px 0 rgba(0, 0, 0, 0.2);
+    padding: 20px 40px;
+  }
+
+  &__table {
+    height: 100%;
+  }
+
+  &__tableHeader,
+  &__tableBody,
+  &__tableFooter {
+    background: rgb(233, 71, 71);
+    border-radius: 10px 10px 0 0;
+    display: grid;
+    grid-template-columns: repeat(6, 200px 200px 50px 200px 60px 60px);
+  }
+
+  &__cell {
+    border-right: 1px solid white;
+    height: 50px;
+    padding-left: 8px;
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    &.editPerson {
+      padding-left: 0;
+    }
+  }
+
+  &__cell:last-child {
+    border-right: none;
+  }
+
+  &__text,
+  &__text--blackish {
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    display: flex;
+    flex-grow: 1;
+    line-height: 21px;
+    word-break: break-all;
+  }
+
+  &__tableBody {
+    background: rgb(220, 220, 220);
+    border-radius: 0;
+    border-top: 1px solid white;
+  }
+
+  &__text--blackish {
+    color: rgb(60, 60, 60);
+    font-size: 14px;
+  }
+
+  &__btn {
+    background: none;
+    display: flex;
+    border: none;
+    border-right: 1px solid white;
+    width: 60px;
+    padding-left: 8px;
+    height: 50px;
+
+
+    &:hover,
+    &:focus {
+      cursor: pointer;
+    }
+  }
+
+  &__btn:last-child {
+    border-right: none;
+  }
+
+  &__tableUsers {
+    margin-top: 10px;
+    background: rgb(233, 71, 71);
+    display: flex;
+    justify-content: center;
+  }
+
+  &__text--otherUsers {
+    font-size: 16px;
+    line-height: 50px;
+    font-weight: 400;
+    color: white;
+  }
+
+  &__tableFooter {
+    border-radius: 0 0 10px 10px;
+  }
+
+  &__otherUser--container {
+    height: 100%;
+    overflow: scroll;
+  }
+
+  &__input {
+    outline: none;
+    border: 1px solid transparent;
+    color: rgb(68, 68, 68);
+    font-size: 14px;
+    font-weight: 400;
+    background: rgb(234, 234, 234);
+    height: 50px;
+    width: 100%;
+    padding-left: 8px;
+
+    &:focus,
+    &:hover {
+      background: rgb(247, 247, 247);
+      color:rgb(46, 46, 46)
+    }
+  }
+}
